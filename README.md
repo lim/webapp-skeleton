@@ -14,6 +14,7 @@ Installation
 ------------
 
     $ git clone https://github.com/lipis/static.git
+    $ cd static
     $ npm install
 
 Running
