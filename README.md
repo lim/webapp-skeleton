@@ -1,5 +1,5 @@
-Static
-======
+WebApp Skeleton
+===============
 
 A nice starting point for CoffeeScript, Less, Jasmine and more...
 
@@ -13,8 +13,8 @@ Requirements
 Installation
 ------------
 
-    $ git clone https://github.com/lipis/static.git
-    $ cd static
+    $ git clone https://github.com/lipis/webapp-skeleton.git foo
+    $ cd foo
     $ npm install
 
 Running

@@ -1,5 +1,5 @@
 {
-  "name": "static",
+  "name": "webapp-skeleton",
   "version": "0.0.1",
   "devDependencies": {
     "grunt": "~0",
