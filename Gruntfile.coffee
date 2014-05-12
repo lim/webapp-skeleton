@@ -3,7 +3,8 @@ module.exports = (grunt) ->
   path = require 'path'
 
   config =
-    port: '8000'
+    connect_port: '8000'
+    livereload_port: '35729'
     app: 'app'
     dist: 'dist'
     prod: 'prod'
@@ -56,32 +57,32 @@ module.exports = (grunt) ->
     watch:
       app:
         options:
-          livereload: true
+          livereload: config.livereload_port
         files: '<%= config.app %>/**/*.{coffee,less}'
         tasks: ['coffee:dist', 'less:dist']
 
       static:
         options:
-          livereload: true
+          livereload: config.livereload_port
         files: ['<%= config.app %>/*.html', '<%= config.app %>/**/*.html']
         tasks: ['copy:dist']
 
       test:
         options:
-          livereload: true
+          livereload: config.livereload_port
         files: '<%= config.test %>/**/*.coffee'
         tasks: ['coffee:test', 'jasmine']
 
 
     open:
       dev:
-        path: 'http://localhost:8000/'
+        path: "http://localhost:#{config.connect_port}/"
 
 
     connect:
       server:
         options:
-          port: 8000,
+          port: config.connect_port,
           hostname: '*'
           base: config.dist
 
