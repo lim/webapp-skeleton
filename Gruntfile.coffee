@@ -4,7 +4,7 @@ module.exports = (grunt) ->
 
   config =
     connect_port: '8000'
-    livereload_port: '35729'
+    livereload_port: 35729
     app: 'app'
     dist: 'dist'
     prod: 'prod'
@@ -82,7 +82,7 @@ module.exports = (grunt) ->
     connect:
       server:
         options:
-          port: config.connect_port,
+          port: config.connect_port
           hostname: '*'
           base: config.dist
 
