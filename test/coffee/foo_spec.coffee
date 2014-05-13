@@ -4,7 +4,7 @@ describe 'foo.hello', ->
     expected = 'Hello, world!'
     expect(actual).toBe expected
 
-  it 'can say hello to Jon', ->
-    actual = hello 'Jon'
-    expected = 'Hello, Jon!'
+  it 'can say hello to John', ->
+    actual = hello 'John'
+    expected = 'Hello, John!'
     expect(actual).toBe expected
