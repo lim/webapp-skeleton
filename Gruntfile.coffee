@@ -95,4 +95,4 @@ module.exports = (grunt) ->
   grunt.registerTask 'dist', ['clean:dist', 'coffee:dist', 'less:dist', 'copy:dist']
   grunt.registerTask 'test', ['dist', 'clean:test', 'coffee:test', 'jasmine']
 
-  grunt.registerTask 'default', ['test', 'connect', 'open', 'watch']
+  grunt.registerTask 'default', ['dist', 'connect', 'open', 'watch']
