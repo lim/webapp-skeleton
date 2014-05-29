@@ -3,8 +3,8 @@ module.exports = (grunt) ->
   path = require 'path'
 
   config =
-    connect_port: 8000
-    livereload_port: 35729
+    connect_port: 8888
+    livereload_port: 31415
     app: 'app'
     dist: 'dist'
     prod: 'prod'
